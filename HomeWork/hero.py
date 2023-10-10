@@ -39,10 +39,9 @@ print(f'Lencht catchphrase: {len(Hero)}')
 class HeroA(SuperHero):
     fly = True
 
-    def __init__(self, name, nickname, superpower, health_points, catchphrase, damage):
+    def __init__(self, name, nickname, superpower, health_points, catchphrase, damage, fly=True):
         super().__init__(name, nickname, superpower, health_points, catchphrase)
         self.damage = damage
-        self.fly = False
 
     def double_health(self):
         self.health_points **= 2
@@ -52,9 +51,8 @@ class HeroA(SuperHero):
 
 
 class HeroE(SuperHero):
-    fly = True
 
-    def __init__(self, name, nickname, superpower, health_points, catchphrase, damage):
+    def __init__(self, name, nickname, superpower, health_points, catchphrase, damage, fly=True):
         super().__init__(name, nickname, superpower, health_points, catchphrase)
         self.damage = damage
 
@@ -78,9 +76,9 @@ class Villian(HeroE):
 
 
 air = HeroA('Aang', 'Быстрые ноги', 'Avatar', 112,
-            'Ип-ип!', 25)
+            'Ип-ип!', 25, False)
 earth = HeroE('Tof', 'Слепой бандит', 'Earth', 100,
-              'Я-великий маг земли', 20)
+              'Я-великий маг земли', 20, False)
 villian = Villian('Ozai', 'Phenix', 'Fire', 45,
                   'Kill the Avatar', 20)
 
