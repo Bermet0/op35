@@ -1,7 +1,6 @@
 
 class SuperHero:
     people = 'people'
-    fly = False
 
     def __init__(self, name, nickname, superpower, health_points, catchphrase):
         self.name = name
@@ -37,7 +36,6 @@ print(f'Lencht catchphrase: {len(Hero)}')
 
 
 class HeroA(SuperHero):
-    fly = True
 
     def __init__(self, name, nickname, superpower, health_points, catchphrase, damage, fly=True):
         super().__init__(name, nickname, superpower, health_points, catchphrase)
