@@ -1,3 +1,7 @@
 .idea
 __pycache__/
 venv
+nasa.db
+reg.txt
+student.db
+students.db

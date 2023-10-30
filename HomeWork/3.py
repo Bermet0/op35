@@ -23,3 +23,12 @@ b.__passw = 0
 print(dir(b))
 b.printn()
 b.sawe()
+
+
+from art import tprint
+import  colorama
+print(colorama.Back.BLACK)
+print(colorama.Fore.RED)
+tprint('clok')
+
+
